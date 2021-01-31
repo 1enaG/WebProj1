@@ -9,6 +9,8 @@ use App\Film;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
+//new line 
+
 class ActorsController extends Controller
 {
     //
