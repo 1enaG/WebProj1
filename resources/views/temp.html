@@ -1,0 +1,42 @@
+<form class="text-left">
+    <div class="form-group">
+        <label for="actor-name">Name</label>
+        <input type="text" class="form-control" name="actor-name" id="actor-name" placeholder="Input name">
+    </div>
+
+    <div class="form-group">
+        <label for="actor-country">Country</label>
+        <input type="text" class="form-control" name="actor-country" id="actor-country" placeholder="Country">
+    </div>
+
+    
+    <div class="form-group">
+        <label for="actor-year">Year</label>
+        <input type="text" class="form-control" name="actor-year" id="actor-year" placeholder="Year">
+    </div>
+    
+    <button type="submit" class="btn btn-primary float-right">Add</button>
+    
+
+</form>
+
+<form method="patch" action="/actors/{{ $actor->id }}" class="text-left">
+    @csrf
+    <div class="form-group">
+        <label for="actor-name">Name</label>
+        <input type="text" class="form-control" name="actor-name"
+                id="actor-name" placeholder="Input name" value="{{ $actor->name }}">
+    </div>
+
+    <div class="form-group">
+        <label for="actor-country">Country</label>
+        <input type="text" class="form-control" name="actor-country" id="actor-country" placeholder="Country" value="{{ $actor->country }}">
+    </div>
+
+    <div class="form-group">
+        <label for="actor-year">Year</label>
+        <input type="text" class="form-control" name="actor-year" id="actor-year" placeholder="Year" value="{{ $actor->year }}">
+    </div>
+    <button type="submit" class="btn btn-primary float-right">Change</button>
+
+</form>
