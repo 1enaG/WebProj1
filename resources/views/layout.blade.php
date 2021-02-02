@@ -75,6 +75,7 @@
             <nav class="nav nav-masthead justify-content-center">
             
                 <a class="nav-link" href="/">Home </a> 
+                <a class="nav-link" href="/dynamic_pdf">PDF </a> 
                 <a class="nav-link" href="/actors">Actors </a> <!--index --> 
                 <a class="nav-link" href="/genre/0/films">Films </a> <!--index --> 
                 <a class="nav-link" href="/genres">Genres </a> 

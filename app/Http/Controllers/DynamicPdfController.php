@@ -15,7 +15,7 @@ class DynamicPdfController extends Controller
     function index(){
        // $film_data; //for array of data 
       // $films = Film::all(); //array of objects 
-      $filmsData = $this->getFilmsData(); 
+      $filmsData = $this->getFilmData(); 
       return view('pdf/dynamic_pdf')->with('filmsData', $filmsData); 
     }
 
